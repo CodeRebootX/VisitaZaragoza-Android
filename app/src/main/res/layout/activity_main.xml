@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="700dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visita Zaragoza"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            android:textStyle="bold|italic" />
+
+        <ImageView
+            android:id="@+id/ivPortada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/imagen_portada" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="    Plaza del Pilar"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                android:typeface="normal" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="6dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:onClick="verPilar"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/icono" />
+
+            <Button
+                android:id="@+id/bPilar"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:insetBottom="4dp"
+                android:onClick="videoPilar"
+                android:text="Ver vídeo"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="    La Aljafería"
+                android:textSize="24sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="6dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:onClick="verAljarefia"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/icono" />
+
+            <Button
+                android:id="@+id/bAljaferia"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="videoAljaferia"
+                android:text="Ver vídeo"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="    Parque Grande"
+                android:textAlignment="viewStart"
+                android:textSize="24sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="6dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:onClick="verParque"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/icono" />
+
+            <Button
+                android:id="@+id/bParque"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="videoParque"
+                android:text="Ver vídeo"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="    Torre del Agua"
+                android:textAlignment="viewStart"
+                android:textSize="24sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="6dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:onClick="verTorre"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/icono" />
+
+            <Button
+                android:id="@+id/bTorre"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="videoTorre"
+                android:text="Ver vídeo"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
